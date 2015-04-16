@@ -51,7 +51,7 @@ add_action( 'wp_enqueue_scripts', 'mysite_enqueue' );
 function mysite_enqueue() {
   $ss_url = get_stylesheet_directory_uri();
   $url = get_site_url();
-  wp_enqueue_script( 'mysite-scripts', "{$url}/custom/js/custom.js" );
+  //wp_enqueue_script( 'mysite-scripts', "{$url}/custom/js/custom.js" );
 }
 
 add_filter('posts_orderby','my_sort_custom',10,2);

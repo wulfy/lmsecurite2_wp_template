@@ -15,7 +15,7 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#@ lmsecurite_2
+#@ Lmsecurite_2
 #: searchform.php:14
 msgid "Text to Search"
 msgstr "Texte à rechercher"

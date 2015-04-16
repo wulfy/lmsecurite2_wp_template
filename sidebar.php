@@ -6,26 +6,27 @@
 ?>
 <!-- begin sidebar -->
 <div id="menu">
-<img src="http://www.lmsecurite.fr/lm.png" class="logo"/>
+<a href="http://www.lmsecurite.fr/ludo/wordpress/"><img src="http://www.lmsecurite.fr/lm.png" class="logo"/></a>
 
 <div id="searchBox">
 		<?php get_search_form(); ?>
 </div>
-
+<button class="buttonMenu hidden" type="button" onclick="toggleDisplayMenu();"><i class="fa fa-align-justify fa-fw"></i></button>
 <div class="listMenuitem" id="listMenuitem">
 	<a class="menuItem" onclick="javascript:scrolltotop();" href="javascript:scrolltotop()"><i class="fa fa-arrow-up"></i>&nbsp; Top</a> 
 	<a class="menuItem" href="http://www.lmsecurite.fr/ludo/wordpress/"><i class="fa fa-home fa-fw"></i>&nbsp; Accueil</a> 
-	<a class="menuItem" href="contact.htm"><i class="fa fa-envelope"></i>&nbsp; Contacts/Devis</a> 
+	<a class="menuItem" href=" http://www.lmsecurite.fr/ludo/wordpress/?page_id=609"><i class="fa fa-envelope"></i>&nbsp; Contacts/Devis</a> 
 </div>
 				
 <ul>
 <?php 	/* Widgetized sidebar, if you have the plugin installed. */
 		if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
 	<?php if ( has_nav_menu( 'primary' ) || 1 ) : ?>
-			<nav id="site-navigation" class="main-navigation" role="navigation">				
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+
 				<div class="fondVert">
 					  <div class="fond">
-					  <a class="list-group-item fondVert" href="equipement%20%20urbain.htm"><i class="fa fa-bus fa-fw"></i>&nbsp; Equipement Urbain</a>
+					  <a class="list-group-item fondVert" href="./equipements-urbains/"><i class="fa fa-bus fa-fw"></i>&nbsp; Equipement Urbain</a>
 						<?php // Primary navigation menu.
 							wp_nav_menu( array(
 								'menu_class'     => 'nav-menu',
