@@ -28,7 +28,7 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 	<!--script type="text/javascript" src="http://www.lmsecurite.fr/js/easySlider1.5.js"></script-->
-	<!--script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- use jssor.slider.mini.js (40KB) instead for release -->
     <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
     <!--script type="text/javascript" src="http://www.lmsecurite.fr/js/jquery.mixitup.min.js"></script>
@@ -49,10 +49,12 @@
 				window.scrollTo(0,0);
 			}**/
         function toggleDisplayMenu(){
-            if($('#site-navigation').hasClass( 'display' ))
-                $('#site-navigation').removeClass('display');
-            else
-                $('#site-navigation').addClass('display');
+        	jQuery(function($){
+	            if($('#site-navigation').hasClass( 'display' ))
+	                $('#site-navigation').removeClass('display');
+	            else
+	                $('#site-navigation').addClass('display');
+	        });
         }
 
 	</script>
